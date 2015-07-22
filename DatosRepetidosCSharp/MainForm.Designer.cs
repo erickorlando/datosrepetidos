@@ -29,30 +29,28 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this.consultoraPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.consultoraPedidoDataGridView = new System.Windows.Forms.DataGridView();
-			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.datoRepetidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.datoRepetidoDataGridView = new System.Windows.Forms.DataGridView();
-			this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtTotal1 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtTotal2 = new System.Windows.Forms.TextBox();
-			((System.ComponentModel.ISupportInitialize)(this.consultoraPedidoBindingSource)).BeginInit();
+			this.datoRepetidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.consultoraPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.pedidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.consultoraPedidoDataGridView)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.datoRepetidoBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.datoRepetidoDataGridView)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.datoRepetidoBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.consultoraPedidoBindingSource)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// consultoraPedidoBindingSource
-			// 
-			this.consultoraPedidoBindingSource.DataSource = typeof(DatosRepetidosCSharp.ConsultoraPedido);
 			// 
 			// consultoraPedidoDataGridView
 			// 
+			this.consultoraPedidoDataGridView.AllowUserToAddRows = false;
+			this.consultoraPedidoDataGridView.AllowUserToDeleteRows = false;
 			this.consultoraPedidoDataGridView.AutoGenerateColumns = false;
 			this.consultoraPedidoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.consultoraPedidoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -61,49 +59,25 @@
 			this.consultoraPedidoDataGridView.DataSource = this.consultoraPedidoBindingSource;
 			this.consultoraPedidoDataGridView.Location = new System.Drawing.Point(12, 28);
 			this.consultoraPedidoDataGridView.Name = "consultoraPedidoDataGridView";
+			this.consultoraPedidoDataGridView.ReadOnly = true;
 			this.consultoraPedidoDataGridView.Size = new System.Drawing.Size(256, 299);
 			this.consultoraPedidoDataGridView.TabIndex = 1;
 			// 
-			// dataGridViewTextBoxColumn1
-			// 
-			this.dataGridViewTextBoxColumn1.DataPropertyName = "Consultora";
-			this.dataGridViewTextBoxColumn1.HeaderText = "Consultora";
-			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-			// 
-			// dataGridViewTextBoxColumn2
-			// 
-			this.dataGridViewTextBoxColumn2.DataPropertyName = "Pedido";
-			this.dataGridViewTextBoxColumn2.HeaderText = "Pedido";
-			this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-			// 
-			// datoRepetidoBindingSource
-			// 
-			this.datoRepetidoBindingSource.DataSource = typeof(DatosRepetidosCSharp.DatoRepetido);
-			// 
 			// datoRepetidoDataGridView
 			// 
+			this.datoRepetidoDataGridView.AllowUserToAddRows = false;
+			this.datoRepetidoDataGridView.AllowUserToDeleteRows = false;
 			this.datoRepetidoDataGridView.AutoGenerateColumns = false;
 			this.datoRepetidoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.datoRepetidoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
+            this.pedidoDataGridViewTextBoxColumn,
+            this.cantidadDataGridViewTextBoxColumn});
 			this.datoRepetidoDataGridView.DataSource = this.datoRepetidoBindingSource;
 			this.datoRepetidoDataGridView.Location = new System.Drawing.Point(343, 28);
 			this.datoRepetidoDataGridView.Name = "datoRepetidoDataGridView";
+			this.datoRepetidoDataGridView.ReadOnly = true;
 			this.datoRepetidoDataGridView.Size = new System.Drawing.Size(258, 299);
 			this.datoRepetidoDataGridView.TabIndex = 2;
-			// 
-			// dataGridViewTextBoxColumn3
-			// 
-			this.dataGridViewTextBoxColumn3.DataPropertyName = "Total";
-			this.dataGridViewTextBoxColumn3.HeaderText = "Total";
-			this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-			// 
-			// dataGridViewTextBoxColumn4
-			// 
-			this.dataGridViewTextBoxColumn4.DataPropertyName = "Cantidad";
-			this.dataGridViewTextBoxColumn4.HeaderText = "Cantidad";
-			this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
 			// 
 			// label1
 			// 
@@ -137,6 +111,42 @@
 			this.txtTotal2.Size = new System.Drawing.Size(100, 20);
 			this.txtTotal2.TabIndex = 4;
 			// 
+			// datoRepetidoBindingSource
+			// 
+			this.datoRepetidoBindingSource.DataSource = typeof(DatosRepetidosCSharp.DatoRepetido);
+			// 
+			// dataGridViewTextBoxColumn1
+			// 
+			this.dataGridViewTextBoxColumn1.DataPropertyName = "Consultora";
+			this.dataGridViewTextBoxColumn1.HeaderText = "Consultora";
+			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+			this.dataGridViewTextBoxColumn1.ReadOnly = true;
+			// 
+			// dataGridViewTextBoxColumn2
+			// 
+			this.dataGridViewTextBoxColumn2.DataPropertyName = "Pedido";
+			this.dataGridViewTextBoxColumn2.HeaderText = "Pedido";
+			this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+			this.dataGridViewTextBoxColumn2.ReadOnly = true;
+			// 
+			// consultoraPedidoBindingSource
+			// 
+			this.consultoraPedidoBindingSource.DataSource = typeof(DatosRepetidosCSharp.ConsultoraPedido);
+			// 
+			// pedidoDataGridViewTextBoxColumn
+			// 
+			this.pedidoDataGridViewTextBoxColumn.DataPropertyName = "Pedido";
+			this.pedidoDataGridViewTextBoxColumn.HeaderText = "Pedido";
+			this.pedidoDataGridViewTextBoxColumn.Name = "pedidoDataGridViewTextBoxColumn";
+			this.pedidoDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// cantidadDataGridViewTextBoxColumn
+			// 
+			this.cantidadDataGridViewTextBoxColumn.DataPropertyName = "Cantidad";
+			this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
+			this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
+			this.cantidadDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,10 +160,11 @@
 			this.Controls.Add(this.consultoraPedidoDataGridView);
 			this.Name = "MainForm";
 			this.Text = "MainForm";
-			((System.ComponentModel.ISupportInitialize)(this.consultoraPedidoBindingSource)).EndInit();
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.consultoraPedidoDataGridView)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.datoRepetidoBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.datoRepetidoDataGridView)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.datoRepetidoBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.consultoraPedidoBindingSource)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -168,10 +179,11 @@
 		private System.Windows.Forms.BindingSource datoRepetidoBindingSource;
 		private System.Windows.Forms.DataGridView datoRepetidoDataGridView;
 		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtTotal1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox txtTotal2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn pedidoDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
 	}
 }

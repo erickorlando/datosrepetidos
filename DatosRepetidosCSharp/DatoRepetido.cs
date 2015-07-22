@@ -8,7 +8,7 @@ namespace DatosRepetidosCSharp
 {
 	public class DatoRepetido
 	{
-		public int Total { get; set; }
+		public int Pedido { get; set; }
 		public int Cantidad { get; set; }
 	}
 }
