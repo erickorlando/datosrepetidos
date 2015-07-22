@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ErickOrlando.Utilidades, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35cc583934d49367, processorArchitecture=MSIL">
-      <HintPath>..\packages\ErickOrlando.Utilidades.1.0.0\lib\ErickOrlando.Utilidades.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,7 +67,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\DataSources\ConsultoraPedido.datasource" />
     <None Include="Properties\DataSources\DatoRepetido.datasource" />
     <None Include="Properties\Settings.settings">
